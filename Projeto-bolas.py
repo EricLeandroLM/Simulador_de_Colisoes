@@ -40,7 +40,7 @@ class Ball():  #Cria uma classe Ball (Estrutura que define propriedades de objet
 
 #Checa se colidiu duas bolas diferentes
 def checarColisao(ball1, ball2):
-    distanceMax = ((ball2.sphere.pos.x - ball1.sphere.pos.x)**2 + (ball2.sphere.pos.y - ball1.sphere.pos.y)**2 + (ball2.sphere.pos.z + ball1.sphere.pos.z)**2)**(1/2)
+    distanceMax = ((ball2.sphere.pos.x - ball1.sphere.pos.x)**2 + (ball2.sphere.pos.y - ball1.sphere.pos.y)**2 + (ball2.sphere.pos.z - ball1.sphere.pos.z)**2)**(1/2)
     if distanceMax < (ball1.radius+ball2.radius):
         return True
     else:
