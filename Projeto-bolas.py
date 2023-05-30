@@ -47,9 +47,9 @@ def checarColisao(ball1, ball2):
         return False
     
 
-for j in range(0, 100): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
+for j in range(0, 50): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
     balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 1, j))
-dt = 0.09
+dt = 0.05
 print(balls)
 while True:
     rate(200)
