@@ -4,6 +4,9 @@ A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num 
 Nosso interesse é desenvolver um programa que permita a visualização e demonstração de conceitos termodinâmicos num gás ideal. 
 
 O que foi realizado até então:
-Simulamos uma situação com 50 partículas em uma caixa, onde elas colidem elasticamente, até então as bibliotecas vphyton e random foram utilizadas para randomizar as propriedades da classe e o vpython para facilitar a otimização da programação. Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
+Simulamos uma situação com 50 partículas em uma caixa, onde elas colidem elasticamente, até então as bibliotecas vphyton e random foram utilizadas para randomizar as propriedades da classe e o vpython para facilitar a otimização da programação. 
+Definimos algumas variáveis de dimensão do sistema, definimos duas listas, uma vazia das bolas que serão criadas no final do prgroama e uma de cores para randomizar nas bolinhas. Criamos a função da classe Ball, com as seguintes propriedades: raio, cor, posição, velocidade, massa, momento, esfera (com a função sphere) e uma identificação individual para as bolinhas. Agora que criamos o espaço e as bolinhas, precisamos saber se elas colidiram, dessa forma, criamos a função checarColisao, que compara a distancia entre duas bolinhas nos eixos x, y e z. Se as bolinhas estiverem numa distancia menor que o diametro delas (quando comparado com o centro delas), então retorna verdadeiro para a função, se não, falso.
+
+Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
 O código está comentado.
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas.
