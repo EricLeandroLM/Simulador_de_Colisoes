@@ -9,6 +9,8 @@ Definimos algumas variáveis de dimensão do sistema, definimos duas listas, uma
 
 Após isso, fizemos um loop para randomizar as propriedades da classe, e criamos uma variável dt, que controla a velocidade. Na linha seguinte, printamos as bolinhas. Para simular infinitamente o sistema de gases, criamos um loop que não para utilizando While True. Nesse while, verificamos se a função checarColisão é True para 2 bolinhas quaisquer, se for True, então ela inverte as coordenadas em x, y e z nas duas bolas. Analisamos as particle em balls, definimos que as particulas, posição e esfera são iguais a soma das particulas, esfera e posição mais o momento sobre a massa (equivalente a velocidade) vezes o dt, que ajusta a velocidade. 
 
+Logo após, fizemos outro loop para verificar se as bolinhas não estavam entre as bordas das caixas, se fosse verdadeiro, o momento da partícula será invertido para ela retornar para a caixa.
+
 Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
 O código está comentado.
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas.
