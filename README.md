@@ -1,3 +1,4 @@
+Membros do grupo: Eric, Izaque, Alice, Karla.
 Simulador de colisões:
 A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num modelo de física clássica e sem troca de energia com o exterior, temos como objetivo simular as partículas como bolas de bilhar (massa, área...) que interagem entre si colidindo elasticamente e sem simular as interações intermoleculares (como formações de ligações químicas) a princípio.  
 
@@ -30,3 +31,7 @@ Temos alguns problemas notados:
 Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
 
 Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
+
+Utilizar a distribuição de maxwell boltzmann para setar as velocidades iniciais
+
+Explicar o uso do código no README
