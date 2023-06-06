@@ -24,3 +24,7 @@ Cada termo da equação apresenta uma caracteristica das moleculas do gás, send
 Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
 O código está comentado.
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas.
+
+Temos alguns problemas notados:
+Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
+Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
