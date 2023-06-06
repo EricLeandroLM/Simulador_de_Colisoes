@@ -49,7 +49,7 @@ def checarColisao(ball1, ball2):
 
 for j in range(0, 50): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
     balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 1, j))
-dt = 0.05
+dt = 0.05 #velocidade das colisões
 print(balls)
 while True:
     rate(200)
@@ -61,7 +61,7 @@ while True:
                 balls[i].p.z, balls[k].p.z = balls[k].p.z, balls[i].p.z
                 #print(f"As bolas {balls[i].ID} e {balls[k].ID} colidiram") 
     for particle in balls:
-        particle.sphere.pos = particle.sphere.pos + (particle.p/particle.mass)*dt
+        particle.sphere.pos = particle.sphere.pos + (particle.p/particle.mass)*dt #(particle.p/particle.mass)*dt --> posição
         if not (side > particle.sphere.pos.x > -side):
             particle.p.x = -particle.p.x
         if not (side > particle.sphere.pos.y > -side):
