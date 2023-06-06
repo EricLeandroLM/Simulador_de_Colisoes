@@ -52,7 +52,7 @@ for j in range(0, 50): #Função que cria as bolinhas aleatóriamente, faz elas 
 dt = 10**(-5) #velocidade da verificação de cada colisão nos frames ### CORRIGIR
 print(balls)
 while True:
-    rate(500)
+    rate(100)
     for i in range(0, len(balls)):
         for k in range(i+1, len(balls)):
             if checarColisao(balls[i], balls[k]): # Se checar colisão (Se colidir) for true, então 
