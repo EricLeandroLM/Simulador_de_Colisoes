@@ -12,7 +12,8 @@ Após isso, fizemos um loop para randomizar as propriedades da classe, e criamos
 
 Logo após, fizemos outro loop para verificar se as bolinhas não estavam entre as bordas das caixas, se fosse verdadeiro, o momento da partícula será invertido para ela retornar para a caixa.
 
-Para descrevermos a velocidade das partículas podemos usar a Distribuição de Maxwell-Boltzmann, que relaciona a velocidade das partículas à sua temperatura, com isso podemos, a partir de algumas deduções descobrir a velocidade média das partículas, a velocidade mais provável de ser encontrada e a velocidade media quadrática, então temos respectivamente:
+Para descrevermos as possíveis velocidades das partículas podemos usar a Distribuição de Maxwell-Boltzmann, que destaca as distribuições das velocidades das partículas no gás, uma vez que as partículas não estão todas à mesma velocidade. Relacionando quantidade de partículas à determinada velocidade, em uma dada temperatura. 
+Com isso podemos, a partir de algumas deduções descobrir a velocidade média das partículas, a velocidade mais provável de ser encontrada e a velocidade media quadrática, então temos respectivamente:
 
 Equação 1: v =  (8.k.T/m.π)^0.5
 
