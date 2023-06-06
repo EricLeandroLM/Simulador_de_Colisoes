@@ -59,7 +59,7 @@ while True:
                 balls[i].p.x, balls[k].p.x = balls[k].p.x, balls[i].p.x #Inverte k e i em x, y e z
                 balls[i].p.y, balls[k].p.y = balls[k].p.y, balls[i].p.y
                 balls[i].p.z, balls[k].p.z = balls[k].p.z, balls[i].p.z
-                #print(f"As bolas {balls[i].ID} e {balls[k].ID} colidiram") 
+                #print(f'As bolas {balls[i].ID} e {balls[k].ID} colidiram')
     for particle in balls:
         particle.sphere.pos = particle.sphere.pos + (particle.p/particle.mass)*dt #(particle.p/particle.mass)*dt --> posição
         if not (side > particle.sphere.pos.x > -side):
