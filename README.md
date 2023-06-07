@@ -34,6 +34,7 @@ Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
 
 Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
 
-Utilizar a distribuição de maxwell boltzmann para setar as velocidades iniciais
+A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura, comprovando seu comportamento. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, o professor James sugeriu que já trabalhássemos com átomos da família/coluna 18/8A, pois esses elementos são partículas monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
+Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Nosso planejamento é que até a próxima semana (13/06/2023), essas alterações estejam implementadas.
 
 Explicar o uso do código no README
