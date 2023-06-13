@@ -38,12 +38,12 @@ class Ball():  #Cria uma classe Ball (Estrutura que define propriedades de objet
 #side = side - thk*0.5 - ball.radius
 
 #Criando o gráfico
-pos_graph = graph(xtitle = "velocity", ytitle = "Particles", fast = True)
+#pos_graph = graph(xtitle = "velocity", ytitle = "Particles", fast = True)
 
 #Criando o objeto do gráfico
-pos_curve = gcurve(color = color.blue, label = 'x-position', graph = pos_graph)
+#pos_curve = gcurve(color = color.blue, label = 'x-position', graph = pos_graph)
 
-y_curve = gcurve(color = color.black, label = "y-position", graph = pos_graph)
+#y_curve = gcurve(color = color.black, label = "y-position", graph = pos_graph)
 
 #Checa se colidiu duas bolas diferentes
 def checarColisao(ball1, ball2):
@@ -55,9 +55,9 @@ def checarColisao(ball1, ball2):
     
 
 for j in range(0, 100): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
-    balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 39.948 , j))
+    balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 1, j))
 dt = 0.05 #velocidade da verificação de cada colisão nos frames ### CORRIGIR
-#print(balls)
+print(balls)
 while True:
     rate(200)
     for i in range(0, len(balls)):
@@ -66,8 +66,8 @@ while True:
                 balls[i].p.x, balls[k].p.x = balls[k].p.x, balls[i].p.x #Inverte k e i em x, y e z
                 balls[i].p.y, balls[k].p.y = balls[k].p.y, balls[i].p.y
                 balls[i].p.z, balls[k].p.z = balls[k].p.z, balls[i].p.z
-                pos_curve.plot((particle.p/particle.mass)*dt, balls[i].p.x)
-                y_curve.plot((particle.p/particle.mass)*dt, balls[i].p.y)
+                #pos_curve.plot((particle.p/particle.mass)*dt, balls[i].p.x)
+                #y_curve.plot((particle.p/particle.mass)*dt, balls[i].p.y)
                 #print(f'As bolas {balls[i].ID} e {balls[k].ID} colidiram')
     for particle in balls:
         particle.sphere.pos = particle.sphere.pos + (particle.p/particle.mass)*dt #(particle.p/particle.mass)*dt --> posição
