@@ -38,4 +38,13 @@ A distribuição de maxwell boltzmann para as velocidades das partículas ainda 
 
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Além disso começamos a esboçar os gráficos dessa distribuição.
 
-
+Para alterar os parâmetros: 
+Tamanho da caixa: side, na linha 7
+Espessura das paredes: thk, linha 8
+Cores das bolas: cores, linha 12
+Quantidade de bolas: for j in range(0,x), altere x, linha 50
+Raio: balls.append(Ball(x, ...), altere x, linha 51
+Massa: balls.append(Ball(..., y, j)), altere y, linha 51
+Velocidade: 3 vetores, linha 51 (São os 3 últimos "vector(rand.randrange(-x, x))" da linha)
+Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05)
+Velocidade dos frames: Rate(x), altere x, 55 (Recomendável utilizar 200, ou mais)
