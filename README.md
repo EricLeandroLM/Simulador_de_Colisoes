@@ -35,6 +35,7 @@ Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
 Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
 
 A distribuição de maxwell boltzmann para as velocidades das partículas ainda não foi implementada no código, estando em processo de estudo. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura, comprovando seu comportamento. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, após a sugestão do professor, definimos que o gás  a ser analisado na colisão será o Argônio, sendo composto de partículas  monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
+
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Além disso começamos a esboçar os gráficos dessa distribuição.
 
 
