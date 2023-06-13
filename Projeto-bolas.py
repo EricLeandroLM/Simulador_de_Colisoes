@@ -37,6 +37,13 @@ class Ball():  #Cria uma classe Ball (Estrutura que define propriedades de objet
         self.sphere = sphere(mass=self.mass, color=self.color, pos=self.pos, radius=self.radius) #Função da biblioteca
 #side = side - thk*0.5 - ball.radius
 
+#Criando o gráfico
+pos_graph = graph(xtitle = "velocity", ytitle = "Particles", fast = True)
+
+#Criando o objeto do gráfico
+pos_curve = gcurve(color = color.blue, label = 'x-position', graph = pos_graph)
+
+y_curve = gcurve(color = color.black, label = "y-position", graph = pos_graph)
 
 #Checa se colidiu duas bolas diferentes
 def checarColisao(ball1, ball2):
@@ -47,18 +54,20 @@ def checarColisao(ball1, ball2):
         return False
     
 
-for j in range(0, 50): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
+for j in range(0, 100): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
     balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 39.948 , j))
-dt = 10**(-5) #velocidade da verificação de cada colisão nos frames ### CORRIGIR
-print(balls)
+dt = 0.05 #velocidade da verificação de cada colisão nos frames ### CORRIGIR
+#print(balls)
 while True:
-    rate(100)
+    rate(200)
     for i in range(0, len(balls)):
         for k in range(i+1, len(balls)):
             if checarColisao(balls[i], balls[k]): # Se checar colisão (Se colidir) for true, então 
                 balls[i].p.x, balls[k].p.x = balls[k].p.x, balls[i].p.x #Inverte k e i em x, y e z
                 balls[i].p.y, balls[k].p.y = balls[k].p.y, balls[i].p.y
                 balls[i].p.z, balls[k].p.z = balls[k].p.z, balls[i].p.z
+                pos_curve.plot((particle.p/particle.mass)*dt, balls[i].p.x)
+                y_curve.plot((particle.p/particle.mass)*dt, balls[i].p.y)
                 #print(f'As bolas {balls[i].ID} e {balls[k].ID} colidiram')
     for particle in balls:
         particle.sphere.pos = particle.sphere.pos + (particle.p/particle.mass)*dt #(particle.p/particle.mass)*dt --> posição
@@ -69,14 +78,5 @@ while True:
         if not (side > particle.sphere.pos.z > -side):
             particle.p.z = -particle.p.z
             
-            
-                  
 #Maxwell-boltzmann distribution
-#k = 1.3806 * (10**-23)
-#for T in range(0, (1.472 * (10**32)) + 1):
-#    prob = ((m/2*pi*k*T)**(3/2))*4*pi*(v**2)*(e**(-m*(v**2))/2*k*T)
- 
-#a[]=0
-#for n in range[n_particle]:
-#    a.append((particle.p/particle.mass))
-    
+#prob = ((m/2*pi*k*T)**(3/2))*4*pi*(v**2)*(e**(-m*(v**2))/2*k*T)
