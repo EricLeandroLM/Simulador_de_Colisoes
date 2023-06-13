@@ -13,7 +13,7 @@ Após isso, fizemos um loop para randomizar as propriedades da classe, e criamos
 
 Logo após, fizemos outro loop para verificar se as bolinhas não estavam entre as bordas das caixas, se fosse verdadeiro, o momento da partícula será invertido para ela retornar para a caixa.
 
-Analisando agora os parâmetros temperatura e valocidade, dado o nosso sistema fechada e com uma temperatura constante, sabemos que a energia cinética do sistema também será constante. Por outro lado, as partículas desse gás não estarão todas a uma mesma velocidade, por isso usaremos a Distribuição de Maxwell-Boltzmann para descrevê-las, relacionando quantidade de partículas à determinada velocidade, em uma dada temperatura. 
+Analisando agora os parâmetros temperatura e valocidade, dado o nosso sistema fechado e com uma temperatura constante, sabemos que a energia cinética do sistema também será constante. Por outro lado, as partículas desse gás não estarão todas a uma mesma velocidade, por isso usaremos a Distribuição de Maxwell-Boltzmann para descrevê-las, relacionando quantidade de partículas à determinada velocidade, em uma dada temperatura. 
 Com isso podemos, a partir de algumas deduções descobrir a velocidade média das partículas, a velocidade mais provável de ser encontrada e a velocidade media quadrática, então temos respectivamente:
 
 Equação 1: v =  (8.k.T/m.π)^0.5
