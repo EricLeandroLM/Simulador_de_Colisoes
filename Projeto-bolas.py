@@ -4,7 +4,7 @@ import random as rand
 
 
 #Variáveis que definem:
-side = 5000          #Tamanho dos lados sistema
+side = 2500          #Tamanho dos lados sistema
 thk = 2            #Espessura da parede
 s2 = 2*side - thk  #Considera o tamanho das paredes junto da espessura delas
 s3 = 2*side + thk  #Considera a altura das paredes junto da espessura delas
