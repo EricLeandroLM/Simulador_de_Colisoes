@@ -35,16 +35,8 @@ class Ball():  #Cria uma classe Ball (Estrutura que define propriedades de objet
         self.p = self.mass*self.velocity
         self.ID = ID
         self.sphere = sphere(mass=self.mass, color=self.color, pos=self.pos, radius=self.radius) #Função da biblioteca
-#side = side - thk*0.5 - ball.radius
-
-#Criando o gráfico
-#pos_graph = graph(xtitle = "velocity", ytitle = "Particles", fast = True)
-
-#Criando o objeto do gráfico
-#pos_curve = gcurve(color = color.blue, label = 'x-position', graph = pos_graph)
-
-#y_curve = gcurve(color = color.black, label = "y-position", graph = pos_graph)
-
+        
+        
 #Checa se colidiu duas bolas diferentes
 def checarColisao(ball1, ball2):
     distanceMax = ((ball2.sphere.pos.x - ball1.sphere.pos.x)**2 + (ball2.sphere.pos.y - ball1.sphere.pos.y)**2 + (ball2.sphere.pos.z - ball1.sphere.pos.z)**2)**(1/2)
@@ -56,7 +48,7 @@ def checarColisao(ball1, ball2):
 
 for j in range(0, 100): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
     balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-150, 150), rand.randrange(-150, 150), rand.randrange(-150, 150)), 40, j))
-dt = 0.005 #velocidade da verificação de cada colisão nos frames ### CORRIGIR
+dt = 0.05 #velocidade da verificação de cada colisão nos frames ### CORRIGIR
 print(balls)
 while True:
     rate(1000)
@@ -66,9 +58,7 @@ while True:
                 balls[i].p.x, balls[k].p.x = balls[k].p.x, balls[i].p.x #Inverte k e i em x, y e z
                 balls[i].p.y, balls[k].p.y = balls[k].p.y, balls[i].p.y
                 balls[i].p.z, balls[k].p.z = balls[k].p.z, balls[i].p.z
-                #pos_curve.plot((particle.p/particle.mass)*dt, balls[i].p.x)
-                #y_curve.plot((particle.p/particle.mass)*dt, balls[i].p.y)
-                #print(f'As bolas {balls[i].ID} e {balls[k].ID} colidiram')
+               
     for particle in balls:
         particle.sphere.pos = particle.sphere.pos + (particle.p/particle.mass)*dt #(particle.p/particle.mass)*dt --> posição
         if not (side > particle.sphere.pos.x > -side):
