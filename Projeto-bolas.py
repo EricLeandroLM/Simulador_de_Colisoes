@@ -55,7 +55,7 @@ def checarColisao(ball1, ball2):
     
 
 for j in range(0, 100): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
-    balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 1, j))
+    balls.append(Ball(2, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-5, 5), rand.randrange(-5, 5), rand.randrange(-5, 5)), 40, j))
 dt = 0.05 #velocidade da verificação de cada colisão nos frames ### CORRIGIR
 print(balls)
 while True:
