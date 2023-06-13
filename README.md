@@ -28,11 +28,6 @@ Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sen
 O código está comentado.
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas.
 
-Temos alguns problemas notados:
-
-Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
-
-Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
 
 A distribuição de maxwell boltzmann para as velocidades das partículas ainda não foi implementada no código, estando em processo de estudo. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura, comprovando seu comportamento. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, após a sugestão do professor, definimos que o gás  a ser analisado na colisão será o Argônio, sendo composto de partículas  monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
 
@@ -48,3 +43,13 @@ Massa: balls.append(Ball(..., y, j)), altere y, linha 51
 Velocidade: 3 vetores, linha 51 (São os 3 últimos "vector(rand.randrange(-x, x))" da linha)
 Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05)
 Velocidade dos frames: Rate(x), altere x, 55 (Recomendável utilizar 200, ou mais)
+
+
+
+Temos alguns problemas notados:
+
+Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
+
+Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
+
+Reeditar dt para calcular, e não definir, como: dt = 0,1/vel_bolinhas (0,1 equivale a 1% do tamanho de uma caixa com 10 metros)
