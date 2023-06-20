@@ -53,3 +53,6 @@ Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
 Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
 
 Reeditar dt para calcular, e não definir, como: dt = 0,1/vel_bolinhas (0,1 equivale a 1% do tamanho de uma caixa com 10 metros)
+
+
+<li>Nenhum produto encontrado.</li>
