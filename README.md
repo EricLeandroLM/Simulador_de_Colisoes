@@ -2,7 +2,6 @@
 
 <b> Membros do grupo: Eric, Izaque, Alice, Karla. </b>
 
-<li><b>Simulador de colisões:</b></li>
 A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num modelo de física clássica e sem troca de energia com o exterior, temos como objetivo simular as partículas como bolas de bilhar (massa, área...) que interagem entre si colidindo elasticamente e sem simular as interações intermoleculares (como formações de ligações químicas) a princípio.  
 
 Nosso interesse é desenvolver um programa que permita a visualização e demonstração de conceitos termodinâmicos num gás ideal. Sendo ele composto por partículas independentes, não localizadas e indistinguíveis.
@@ -34,6 +33,7 @@ A distribuição de maxwell boltzmann para as velocidades das partículas ainda 
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Além disso começamos a esboçar os gráficos dessa distribuição.
 
 <h2>Para alterar os parâmetros: </h2>
+
 <li> Tamanho da caixa: side, na linha 7 </li>
 <li> Espessura das paredes: thk, linha 8 </li>
 <li> Cores das bolas: cores, linha 12 </li>
@@ -46,19 +46,8 @@ Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele n
 
 
 
-Temos alguns problemas notados:
+<h2>Problemas:</h2>
 
-Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
+<li>Não foi possivel fazer a distribuição Maxwell-Boltzmann</li>
 
-Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
-
-Reeditar dt para calcular, e não definir, como: dt = 0,1/vel_bolinhas (0,1 equivale a 1% do tamanho de uma caixa com 10 metros)
-
-
-<li>Nenhum produto encontrado.</li>
-
-
-
-
-
-<li>Nenhum produto encontrado.</li>
+<li>#Completar#</li>
