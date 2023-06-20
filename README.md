@@ -30,17 +30,16 @@ Cada termo da equação apresenta uma caracteristica das moleculas do gás, send
 
 Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
 O código está comentado.
-<<<<<<< HEAD
+
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, o professor James sugeriu que já trabalhássemos com átomos da família/coluna 18/8A, pois esses elementos são partículas monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos porceder para fazer a distribuição da velocidade de forma que a distribuição de maxuell boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Nosso planejamento é que até a próxima semana (13/06/2023), essas alterações estejam implementadas.
-=======
+
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas.
 
 
 A distribuição de maxwell boltzmann para as velocidades das partículas ainda não foi implementada no código, estando em processo de estudo. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura, comprovando seu comportamento. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, após a sugestão do professor, definimos que o gás  a ser analisado na colisão será o Argônio, sendo composto de partículas  monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
-=======
+
 Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura, comprovando seu comportamento. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, após a sugestão do professor, definimos que o gás  a ser analisado na colisão será o Argônio, sendo composto de partículas  monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
->>>>>>> c7413b819bf488c7040d702e77254251b01040f4
 
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Além disso começamos a esboçar os gráficos dessa distribuição.
 
@@ -70,7 +69,7 @@ O histograma não foi adiante após diversas tentativas, a medida que percebemos
 <li> Velocidade dos frames: Rate(x), altere x, linha 55 (Recomendável utilizar 200, ou mais) </li>
 
 
-<<<<<<< HEAD
+
 
 Temos alguns problemas notados:
 
@@ -88,8 +87,8 @@ Reeditar dt para calcular, e não definir, como: dt = 0,1/vel_bolinhas (0,1 equi
 
 
 <li>Nenhum produto encontrado.</li>
->>>>>>> 8243e0d36b694c6553407f97aea532b75ebc330c
-=======
+
+
 <h3>Conclusão:</h3>
 O projeto foi finalizadol sendo um simulador de colisões entre partículas idealizadas de Argônio (Já que é um gás ideal e em teoria não necessita de ligações químicas com outras partículas), no qual o usuário pode alterar os parâmetros de número de partículas e temperatura como input ou ajustar o código manualmente, que inclui outros parâmetros, como tamanho da caixa, espessura, cores, raio, massa e velocidades para situações diferentes. Tendo sido alcançado o objetivo inicial, apesar das tentativas de atualização com a plotagem dos histogramas.
->>>>>>> c7413b819bf488c7040d702e77254251b01040f4
+
