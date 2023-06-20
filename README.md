@@ -18,11 +18,9 @@ Logo após, fizemos outro loop para verificar se as bolinhas não estavam entre 
 Analisando agora os parâmetros temperatura e valocidade, dado o nosso sistema fechado e com uma temperatura constante, sabemos que a energia cinética do sistema também será constante. Por outro lado, as partículas desse gás não estarão todas a uma mesma velocidade, por isso usaremos a Distribuição de Maxwell-Boltzmann para descrevê-las, relacionando quantidade de partículas à determinada velocidade, em uma dada temperatura. 
 Com isso podemos, a partir de algumas deduções descobrir a velocidade média das partículas, a velocidade mais provável de ser encontrada e a velocidade media quadrática, então temos respectivamente:
 
-Equação 1: v =  (8.k.T/m.π)^0.5
-
-Equação 2: v = (2.k.T/m)^0.5
-
-Equação 3: v = (3.k.T/m)^0.5
+<li><b> Equação 1: v =  (8.k.T/m.π)^0.5 </b></li>
+<li><b> Equação 2: v = (2.k.T/m)^0.5 </b></li>
+<li><b> Equação 3: v = (3.k.T/m)^0.5 </b></li>
 
 Cada termo da equação apresenta uma caracteristica das moleculas do gás, sendo k a constante de boltsmann (relaciona a constante dos gases perfeitos com a constante de avogrado), T a temperatura em kelvins e m a massa em gramas.
 
