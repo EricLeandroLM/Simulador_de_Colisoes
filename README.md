@@ -68,7 +68,7 @@ O histograma não foi adiante após diversas tentativas, a medida que percebemos
 <li> Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05) </li>
 <li> Velocidade dos frames: Rate(x), altere x, linha 55 (Recomendável utilizar 200, ou mais) </li>
 
-<h2>Requerimentos: <h2>
+<h2>Requerimentos: </h2>
   <li> Bibliotecas: vpython, random e time
 
 <h3>Conclusão:</h3>
