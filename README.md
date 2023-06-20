@@ -1,3 +1,5 @@
+Membros do grupo: Eric, Izaque, Alice, Karla.
+
 Simulador de colisões:
 A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num modelo de física clássica e sem troca de energia com o exterior, temos como objetivo simular as partículas como bolas de bilhar (massa, área...) que interagem entre si colidindo elasticamente e sem simular as interações intermoleculares (como formações de ligações químicas) a princípio.  
 
@@ -11,7 +13,8 @@ Após isso, fizemos um loop para randomizar as propriedades da classe, e criamos
 
 Logo após, fizemos outro loop para verificar se as bolinhas não estavam entre as bordas das caixas, se fosse verdadeiro, o momento da partícula será invertido para ela retornar para a caixa.
 
-Para descrevermos a velocidade das partículas podemos usar a Distribuição de Maxwell-Boltzmann, que relaciona a velocidade das partículas à sua temperatura, com isso podemos, a partir de algumas deduções descobrir a velocidade média das partículas, a velocidade mais provável de ser encontrada e a velocidade media quadrática, então temos respectivamente:
+Analisando agora os parâmetros temperatura e valocidade, dado o nosso sistema fechado e com uma temperatura constante, sabemos que a energia cinética do sistema também será constante. Por outro lado, as partículas desse gás não estarão todas a uma mesma velocidade, por isso usaremos a Distribuição de Maxwell-Boltzmann para descrevê-las, relacionando quantidade de partículas à determinada velocidade, em uma dada temperatura. 
+Com isso podemos, a partir de algumas deduções descobrir a velocidade média das partículas, a velocidade mais provável de ser encontrada e a velocidade media quadrática, então temos respectivamente:
 
 Equação 1: v =  (8.k.T/m.π)^0.5
 
@@ -23,5 +26,44 @@ Cada termo da equação apresenta uma caracteristica das moleculas do gás, send
 
 Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
 O código está comentado.
+<<<<<<< HEAD
 A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, o professor James sugeriu que já trabalhássemos com átomos da família/coluna 18/8A, pois esses elementos são partículas monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos porceder para fazer a distribuição da velocidade de forma que a distribuição de maxuell boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Nosso planejamento é que até a próxima semana (13/06/2023), essas alterações estejam implementadas.
+=======
+A ideia é que agora, apliquemos a distribuição de maxwell boltzmann para as velocidades das partículas.
+
+
+A distribuição de maxwell boltzmann para as velocidades das partículas ainda não foi implementada no código, estando em processo de estudo. Essa distribuição possibilita observar a velocidade das partículas, em uma distribuição probabilística, em determinada temperatura, comprovando seu comportamento. Iremos implementar algumas modificações: o usuário poderá alterar a quantidade de partículas e a temperatura da simulação. Além disso, após a sugestão do professor, definimos que o gás  a ser analisado na colisão será o Argônio, sendo composto de partículas  monoatômicas, permitindo que com algumas aproximações seu formato seja bem representado por uma esfera. 
+
+Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Além disso começamos a esboçar os gráficos dessa distribuição.
+
+<h2>Para alterar os parâmetros: </h2>
+<li> Tamanho da caixa: side, na linha 7 </li>
+<li> Espessura das paredes: thk, linha 8 </li>
+<li>Cores das bolas: cores, linha 12 </li>
+Quantidade de bolas: for j in range(0,x), altere x, linha 50
+Raio: balls.append(Ball(x, ...), altere x, linha 51
+Massa: balls.append(Ball(..., y, j)), altere y, linha 51
+Velocidade: 3 vetores, linha 51 (São os 3 últimos "vector(rand.randrange(-x, x))" da linha)
+Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05)
+Velocidade dos frames: Rate(x), altere x, 55 (Recomendável utilizar 200, ou mais)
+
+
+
+Temos alguns problemas notados:
+
+Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
+
+Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
+
+Reeditar dt para calcular, e não definir, como: dt = 0,1/vel_bolinhas (0,1 equivale a 1% do tamanho de uma caixa com 10 metros)
+
+
+<li>Nenhum produto encontrado.</li>
+
+
+
+
+
+<li>Nenhum produto encontrado.</li>
+>>>>>>> 8243e0d36b694c6553407f97aea532b75ebc330c
