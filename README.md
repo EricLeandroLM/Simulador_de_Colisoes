@@ -1,4 +1,6 @@
-Membros do grupo: Eric, Izaque, Alice, Karla.
+<h1> SIMULADOR DE COLISÕES </h1>
+
+<Membros do grupo: Eric, Izaque, Alice, Karla.
 
 Simulador de colisões:
 A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num modelo de física clássica e sem troca de energia com o exterior, temos como objetivo simular as partículas como bolas de bilhar (massa, área...) que interagem entre si colidindo elasticamente e sem simular as interações intermoleculares (como formações de ligações químicas) a princípio.  
@@ -36,13 +38,13 @@ Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele n
 <h2>Para alterar os parâmetros: </h2>
 <li> Tamanho da caixa: side, na linha 7 </li>
 <li> Espessura das paredes: thk, linha 8 </li>
-<li>Cores das bolas: cores, linha 12 </li>
-Quantidade de bolas: for j in range(0,x), altere x, linha 50
-Raio: balls.append(Ball(x, ...), altere x, linha 51
-Massa: balls.append(Ball(..., y, j)), altere y, linha 51
-Velocidade: 3 vetores, linha 51 (São os 3 últimos "vector(rand.randrange(-x, x))" da linha)
-Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05)
-Velocidade dos frames: Rate(x), altere x, 55 (Recomendável utilizar 200, ou mais)
+<li> Cores das bolas: cores, linha 12 </li>
+<li> Quantidade de bolas: for j in range(0,x), altere x, linha 50 </li>
+<li> Raio: balls.append(Ball(x, ...), altere x, linha 51 </li>
+<li> Massa: balls.append(Ball(..., y, j)), altere y, linha 51 </li>
+<li> Velocidade: 3 vetores, linha 51 (São os 3 últimos "vector(rand.randrange(-x, x))" da linha) </li>
+<li> Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05) </li>
+<li> Velocidade dos frames: Rate(x), altere x, 55 (Recomendável utilizar 200, ou mais) </li>
 
 
 
