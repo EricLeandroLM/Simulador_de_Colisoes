@@ -20,7 +20,7 @@ Com isso podemos, a partir de algumas deduções descobrir a velocidade média d
 <li><b> Equação 1: v =  (8.k.T/m.π)^0.5 </b></li>
 <li><b> Equação 2: v = (2.k.T/m)^0.5 </b></li>
 <li><b> Equação 3: v = (3.k.T/m)^0.5 </b></li>
-
+{% empyt %}
 
 Cada termo da equação apresenta uma caracteristica das moleculas do gás, sendo k a constante de boltsmann (relaciona a constante dos gases perfeitos com a constante de avogrado), T a temperatura em kelvins e m a massa em gramas.
 
