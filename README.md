@@ -1,6 +1,6 @@
 <h1> SIMULADOR DE COLISÕES </h1>
 
-<Membros do grupo: Eric, Izaque, Alice, Karla.
+<h2> Membros do grupo: Eric, Izaque, Alice, Karla. </h2>
 
 Simulador de colisões:
 A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num modelo de física clássica e sem troca de energia com o exterior, temos como objetivo simular as partículas como bolas de bilhar (massa, área...) que interagem entre si colidindo elasticamente e sem simular as interações intermoleculares (como formações de ligações químicas) a princípio.  
