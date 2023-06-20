@@ -4,8 +4,8 @@ import random as rand
 
 
 #Variáveis que definem:
-side = 2500          #Tamanho dos lados sistema
-thk = 2            #Espessura da parede
+side = 1000         #Tamanho dos lados sistema
+thk = 0.3           #Espessura da parede
 s2 = 2*side - thk  #Considera o tamanho das paredes junto da espessura delas
 s3 = 2*side + thk  #Considera a altura das paredes junto da espessura delas
 balls = []
@@ -47,7 +47,7 @@ def checarColisao(ball1, ball2):
     
 
 for j in range(0, 250): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
-    balls.append(Ball(100, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-250, 250), rand.randrange(-250, 250), rand.randrange(-250, 250)), 40, j))
+    balls.append(Ball(100, rand.choice(cores), vector(rand.randrange(-side, side), rand.randrange(-side, side), rand.randrange(-side, side)), vector(rand.randrange(-100, 100), rand.randrange(-100, 100), rand.randrange(-100, 100)), 40, j))
 
 print(balls)
 while True:
