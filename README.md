@@ -2,7 +2,7 @@
 
 <b> Membros do grupo: Eric, Izaque, Alice, Karla. </b>
 
-Simulador de colisões:
+<li><b>Simulador de colisões:</b></li>
 A ideia do projeto do grupo é desenvolver uma simulação de um gás ideal num modelo de física clássica e sem troca de energia com o exterior, temos como objetivo simular as partículas como bolas de bilhar (massa, área...) que interagem entre si colidindo elasticamente e sem simular as interações intermoleculares (como formações de ligações químicas) a princípio.  
 
 Nosso interesse é desenvolver um programa que permita a visualização e demonstração de conceitos termodinâmicos num gás ideal. Sendo ele composto por partículas independentes, não localizadas e indistinguíveis.
