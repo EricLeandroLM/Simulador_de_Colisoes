@@ -36,7 +36,7 @@ class Ball():  #Cria uma classe Ball (Estrutura que define propriedades de objet
         self.sphere = sphere(mass=self.mass, color=self.color, pos=self.pos, radius=self.radius) #Função da biblioteca
 
 p_side = side/100 #Dimensão do dt (1% da dimensão da caixa)
-dt = p_side/velocity #velocidade da verificação de cada colisão nos frames, calculada a partir de 0.1 da velocidade
+dt = p_side/ball.velocity #velocidade da verificação de cada colisão nos frames, calculada a partir de 0.1 da velocidade
 
 #Checa se colidiu duas bolas diferentes
 def checarColisao(ball1, ball2):
