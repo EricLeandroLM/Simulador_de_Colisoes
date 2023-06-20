@@ -11,7 +11,6 @@ s3 = 2*side + thk  #Considera a altura das paredes junto da espessura delas
 balls = []
 cores = [color.red, color.green]
 
-
 #Criação das paredes
 #Parede = cria uma caixa (Cada parede é uma caixa) com os vetores posição 50, 0, 0 e vetores tamanho (espessura, tamanho horizontal, tamanho vertical) e escolhe a cor vermelha
 #Segue o padrão para linha WallR e WallL
@@ -36,7 +35,8 @@ class Ball():  #Cria uma classe Ball (Estrutura que define propriedades de objet
         self.ID = ID
         self.sphere = sphere(mass=self.mass, color=self.color, pos=self.pos, radius=self.radius) #Função da biblioteca
         
-        
+dt = 0.1/velocity #velocidade da verificação de cada colisão nos frames, calculada a partir de 0.1 da velocidade
+
 #Checa se colidiu duas bolas diferentes
 def checarColisao(ball1, ball2):
     distanceMax = ((ball2.sphere.pos.x - ball1.sphere.pos.x)**2 + (ball2.sphere.pos.y - ball1.sphere.pos.y)**2 + (ball2.sphere.pos.z - ball1.sphere.pos.z)**2)**(1/2)
@@ -48,7 +48,7 @@ def checarColisao(ball1, ball2):
 
 for j in range(0, 250): #Função que cria as bolinhas aleatóriamente, faz elas mexerem
     balls.append(Ball(100, rand.choice(cores), vector(rand.randrange(-20, 20), rand.randrange(-20, 20), rand.randrange(-20, 20)), vector(rand.randrange(-250, 250), rand.randrange(-250, 250), rand.randrange(-250, 250)), 40, j))
-dt = 0.5 #velocidade da verificação de cada colisão nos frames ### CORRIGIR
+
 print(balls)
 while True:
     rate(1000)
