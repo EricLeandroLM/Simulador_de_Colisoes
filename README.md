@@ -33,7 +33,7 @@ A distribuição de maxwell boltzmann para as velocidades das partículas ainda 
 
 Falamos com o professor Felipe sobre a distribuição de maxwell boltzman, ele nos auxiliou em como deveríamos proceder para fazer a distribuição da velocidade de forma que essa distribuição de boltzman seja satisfeita. No geral, ainda implementaremos a distribuição das velocidades para as partículas e, também, a entrada de temperatura e quantidade de partículas. Além disso começamos a esboçar os gráficos dessa distribuição.
 
-##Para alterar os parâmetros: 
+<h2>Para alterar os parâmetros: <\h2>
 <li> Tamanho da caixa: side, na linha 7 <\li>
 <li> Espessura das paredes: thk, linha 8 </li>
 <li>Cores das bolas: cores, linha 12 </li>
