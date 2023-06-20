@@ -19,12 +19,12 @@ Logo após, fizemos outro loop para verificar se as bolinhas não estavam entre 
 
 Analisando agora os parâmetros temperatura e valocidade, dado o nosso sistema fechado e com uma temperatura constante, sabemos que a energia cinética do sistema também será constante. Por outro lado, as partículas desse gás não estarão todas a uma mesma velocidade, nessa buscamos implementar também um plot com a distribuição de Maxwell-Boltzmann para descrevê-las e detalha-las melhor. A distribuição de Boltzmann para as velocidades das partículas ainda não foi implementada no código, estando em processo de estudo. 
 
-<<<<<<< HEAD
 Equação 1: v =  (8.k.T/m.π)^0.5
 
 Equação 2: v = (2.k.T/m)^0.5
 
 Equação 3: v = (3.k.T/m)^0.5
+
 
 Cada termo da equação apresenta uma caracteristica das moleculas do gás, sendo k a constante de boltsmann (relaciona a constante dos gases perfeitos com a constante de avogrado), T a temperatura em kelvins e m a massa em gramas.
 
@@ -69,26 +69,5 @@ O histograma não foi adiante após diversas tentativas, a medida que percebemos
 <li> Velocidade dos frames: Rate(x), altere x, linha 55 (Recomendável utilizar 200, ou mais) </li>
 
 
-
-
-Temos alguns problemas notados:
-
-Em algumas vezes que roda o programa, algumas bolas iniciam fora da caixa
-
-Em algumas vezes que roda o programa, algumas bolas iniciam juntas (como uma ligação química), mas logo depois se desfazem
-
-Reeditar dt para calcular, e não definir, como: dt = 0,1/vel_bolinhas (0,1 equivale a 1% do tamanho de uma caixa com 10 metros)
-
-
-<li>Nenhum produto encontrado.</li>
-
-
-
-
-
-<li>Nenhum produto encontrado.</li>
-
-
 <h3>Conclusão:</h3>
 O projeto foi finalizadol sendo um simulador de colisões entre partículas idealizadas de Argônio (Já que é um gás ideal e em teoria não necessita de ligações químicas com outras partículas), no qual o usuário pode alterar os parâmetros de número de partículas e temperatura como input ou ajustar o código manualmente, que inclui outros parâmetros, como tamanho da caixa, espessura, cores, raio, massa e velocidades para situações diferentes. Tendo sido alcançado o objetivo inicial, apesar das tentativas de atualização com a plotagem dos histogramas.
-
