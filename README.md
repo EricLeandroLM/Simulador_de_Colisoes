@@ -21,6 +21,7 @@ Com isso podemos, a partir de algumas deduções descobrir a velocidade média d
 <li><b> Equação 2: v = (2.k.T/m)^0.5 </b></li>
 <li><b> Equação 3: v = (3.k.T/m)^0.5 </b></li>
 
+
 Cada termo da equação apresenta uma caracteristica das moleculas do gás, sendo k a constante de boltsmann (relaciona a constante dos gases perfeitos com a constante de avogrado), T a temperatura em kelvins e m a massa em gramas.
 
 Inicialmente, o código foi escrito no vscode e salvo com a extenção  .py, sendo possível acessar a simulação pelo cmd com o comando: "py Projeto-bolas.py".
