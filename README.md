@@ -68,6 +68,8 @@ O histograma não foi adiante após diversas tentativas, a medida que percebemos
 <li> Velocidade de propagação das bolinhas na simulação: dt, linha 52 (Recomendável utilizar 0.05) </li>
 <li> Velocidade dos frames: Rate(x), altere x, linha 55 (Recomendável utilizar 200, ou mais) </li>
 
+<h2>Requerimentos: <h2>
+  <li> Bibliotecas: vpython, random e time
 
 <h3>Conclusão:</h3>
 O projeto foi finalizadol sendo um simulador de colisões entre partículas idealizadas de Argônio (Já que é um gás ideal e em teoria não necessita de ligações químicas com outras partículas), no qual o usuário pode alterar os parâmetros de número de partículas e temperatura como input ou ajustar o código manualmente, que inclui outros parâmetros, como tamanho da caixa, espessura, cores, raio, massa e velocidades para situações diferentes. Tendo sido alcançado o objetivo inicial, apesar das tentativas de atualização com a plotagem dos histogramas.
